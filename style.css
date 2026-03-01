@@ -37,19 +37,6 @@ nav {
   color: #6a1b9a;
   text-decoration: none;
   font-weight: bold;
-  transition: 0.3s;
-}
-
-.nav-links a:hover {
-  color: #ff4081;
-}
-
-.hamburger,
-.theme-toggle {
-  display: none;
-  font-size: 1.8em;
-  cursor: pointer;
-  color: #6a1b9a;
 }
 
 @media (max-width: 768px) {
@@ -65,10 +52,6 @@ nav {
   }
   .nav-links.active {
     display: flex;
-  }
-  .hamburger,
-  .theme-toggle {
-    display: block;
   }
 }
 
@@ -95,24 +78,25 @@ header {
   font-size: 3em;
 }
 
-.highlight {
-  color: #ffd54f;
-}
-
-/* Profile picture */
+/* Profile Picture */
 .profile-pic {
   width: 240px;
   height: 240px;
   border-radius: 50%;
   object-fit: cover;
-  object-position: top center;
-  border: 5px solid white;
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
-  transition: 0.4s;
+  object-position: center;
 }
 
-.profile-pic:hover {
-  transform: scale(1.05);
+/* Responsive for mobile */
+@media (max-width: 768px) {
+  .profile-pic {
+    width: 160px;
+    height: 160px;
+  }
+
+  .hero-text h1 {
+    font-size: 2em;
+  }
 }
 
 /* Sections */
@@ -138,10 +122,9 @@ h2 {
   margin: 15px auto;
   max-width: 600px;
   border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
-/* Skills */
+/* Skills Section */
 .dark-section {
   background: #e1f5fe;
 }
@@ -160,8 +143,6 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: conic-gradient(#ff4081 0deg, #cfd8dc 0deg);
-  font-weight: bold;
   flex-direction: column;
 }
 
@@ -183,32 +164,13 @@ h2 {
   display: flex;
   align-items: center;
   gap: 8px;
-  transition: 0.3s;
 }
 
-.contact-links a:hover {
-  transform: scale(1.05);
-}
-
-.facebook {
-  background: #3b5998;
-}
-
-.instagram {
-  background: #e1306c;
-}
-
-.twitter {
-  background: #1DA1F2;
-}
-
-.call {
-  background: #ff5722;
-}
-
-.whatsapp {
-  background: #25D366;
-}
+.facebook { background: #3b5998; }
+.instagram { background: #e1306c; }
+.twitter { background: #1DA1F2; }
+.call { background: #ff5722; }
+.whatsapp { background: #25D366; }
 
 /* Footer */
 footer {
@@ -216,21 +178,4 @@ footer {
   color: white;
   padding: 20px;
   text-align: center;
-}
-
-/* Responsive Hero Image and Text */
-@media (max-width: 768px) {
-  .hero-container {
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .profile-pic {
-    width: 160px;
-    height: 160px;
-  }
-
-  .hero-text h1 {
-    font-size: 2em;
-  }
 }
