@@ -1,101 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Samuel Kabesa Nyabuto | Portfolio</title>
-  <meta name="description" content="Samuel Kabesa Nyabuto - Software Engineer Portfolio.">
-  <meta name="author" content="Samuel Kabesa Nyabuto">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@600&display=swap" rel="stylesheet">
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<title>Samuel Kabesa Nyabuto | Software Engineer</title>
+<meta name="description" content="Samuel Kabesa Nyabuto - Kenyan Software Engineer specializing in modern web development and automation.">
+<meta name="keywords" content="Samuel Kabesa, Software Engineer Kenya, Web Developer Nairobi">
 
-  <!-- Embedded CSS -->
-  <style>
-    /* Reset */
-    * {margin:0; padding:0; box-sizing:border-box;}
-    body {font-family:'Roboto',sans-serif; background:#f3e5f5; color:#111; scroll-behavior:smooth;}
-
-    /* Navigation */
-    nav {
-      position: fixed;
-      width: 100%;
-      background: rgba(255,255,255,0.95);
-      backdrop-filter: blur(10px);
-      z-index: 1000;
-    }
-    .nav-container {display:flex; justify-content:space-between; align-items:center; padding:15px 20px;}
-    .nav-links {display:flex; gap:25px;}
-    .nav-links a {color:#6a1b9a; text-decoration:none; font-weight:bold;}
-    @media(max-width:768px){
-      .nav-links {display:none; flex-direction:column; position:absolute; top:65px; right:20px; background:white; padding:20px; border-radius:10px;}
-      .nav-links.active {display:flex;}
-    }
-
-    /* Hero */
-    header {
-      height:100vh;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      background:linear-gradient(135deg,#6a11cb,#ff4081);
-      color:white;
-      text-align:center;
-    }
-    .hero-container {display:flex; flex-direction:column; gap:30px; align-items:center;}
-    .hero-text h1 {font-family:'Montserrat',sans-serif; font-size:3em;}
-
-    /* Profile picture */
-    .profile-pic {
-      width: 240px;
-      height: 240px;
-      border-radius: 50%;
-      object-fit: cover;
-      object-position: center;
-    }
-    @media(max-width:768px){
-      .profile-pic {width:160px; height:160px;}
-      .hero-text h1 {font-size:2em;}
-    }
-
-    /* Sections */
-    section {padding:100px 20px; text-align:center;}
-    h2 {font-size:2.3em; margin-bottom:30px; color:#6a1b9a;}
-    .container {max-width:1000px; margin:auto;}
-    .card {background:#fce4ec; padding:20px; margin:15px auto; max-width:600px; border-radius:10px;}
-
-    /* Skills */
-    .dark-section {background:#e1f5fe;}
-    .skills-wrapper {display:flex; flex-wrap:wrap; gap:30px; justify-content:center;}
-    .skill-circle {width:140px; height:140px; border-radius:50%; display:flex; align-items:center; justify-content:center; flex-direction:column;}
-
-    /* Contact */
-    .contact-links {display:flex; flex-wrap:wrap; gap:15px; justify-content:center; margin-top:20px;}
-    .contact-links a {padding:10px 15px; border-radius:8px; color:white; text-decoration:none; font-weight:bold; display:flex; align-items:center; gap:8px;}
-    .facebook {background:#3b5998;}
-    .instagram {background:#e1306c;}
-    .twitter {background:#1DA1F2;}
-    .call {background:#ff5722;}
-    .whatsapp {background:#25D366;}
-
-    /* Footer */
-    footer {background:#6a1b9a; color:white; padding:20px; text-align:center;}
-  </style>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
 <!-- Navigation -->
 <nav>
   <div class="nav-container">
     <div class="logo">Samuel Kabesa Nyabuto</div>
-    <div class="nav-links" id="nav-links">
+    <div class="nav-links">
       <a href="#home">Home</a>
       <a href="#about">About</a>
       <a href="#education">Education</a>
       <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
       <a href="#certifications">Certifications</a>
       <a href="#contact">Contact</a>
     </div>
@@ -105,13 +33,10 @@
 <!-- Hero -->
 <header id="home">
   <div class="hero-container">
+    <img src="images/profile.jpg" alt="Samuel Kabesa Nyabuto" class="profile-pic">
     <div class="hero-text">
-      <h1>Hi, I’m Samuel Kabesa Nyabuto</h1>
-      <p>I'm a software engineer crafting <span class="highlight">web and mobile application solutions</span>.</p>
-      <p>I build clean, efficient, and scalable software that solves real-world problems.</p>
-    </div>
-    <div class="hero-image">
-      <img src="images/profile.jpg" alt="Samuel Kabesa Nyabuto" class="profile-pic">
+      <h1>Hi, I’m <span class="highlight">Samuel Kabesa Nyabuto</span></h1>
+      <p>Kenyan Software Engineer building modern web and automation solutions.</p>
     </div>
   </div>
 </header>
@@ -121,9 +46,8 @@
   <div class="container">
     <h2>About Me</h2>
     <p>
-      I am a Kenyan-based software engineer passionate about building modern web
-      and mobile applications. I focus on writing scalable, maintainable,
-      and efficient code that solves real-world problems.
+      I am a Software Engineering student at Kisii University passionate about
+      developing scalable, maintainable and efficient digital systems.
     </p>
   </div>
 </section>
@@ -132,51 +56,68 @@
 <section id="education">
   <div class="container">
     <h2>Education</h2>
-    <div class="card">
-      <h3>St Mary’s Primary School</h3>
-      <p>2015 - 2020</p>
-    </div>
-    <div class="card">
-      <h3>Kisii High School</h3>
-      <p>2020 - 2024</p>
-    </div>
+
     <div class="card">
       <h3>Kisii University – Software Engineering</h3>
       <p>2024 - Present</p>
+    </div>
+
+    <div class="card">
+      <h3>Kisii High School</h3>
+      <p>2020 - 2024</p>
     </div>
   </div>
 </section>
 
 <!-- Skills -->
-<section id="skills" class="dark-section">
+<section id="skills">
   <div class="container">
-    <h2>My Skills</h2>
-    <div class="skills-wrapper">
-      <div class="skill-circle"><span>HTML</span></div>
-      <div class="skill-circle"><span>CSS</span></div>
-      <div class="skill-circle"><span>Java</span></div>
-      <div class="skill-circle"><span>Python</span></div>
-      <div class="skill-circle"><span>React</span></div>
-      <div class="skill-circle"><span>Node.js</span></div>
-    </div>
-  </div>
-</section>
+    <h2>Technical Skills</h2>
 
-<!-- Projects -->
-<section id="projects">
-  <div class="container">
-    <h2>Projects</h2>
-    <div class="card">
-      <h3>Speedy Car Game (Python)</h3>
-      <p>A console-based car game with scoring, speed boosts, and obstacles.</p>
-    </div>
-    <div class="card">
-      <h3>Quick SMS App (Android)</h3>
-      <p>An Android app to send SMS messages with a simple interface.</p>
-    </div>
-    <div class="card">
-      <h3>Personal Portfolio Website</h3>
-      <p>A personal website showcasing projects, skills, and achievements.</p>
+    <div class="skills-grid">
+
+      <div class="skill-card">
+        <i class="fab fa-html5 skill-icon html"></i>
+        <h3>HTML5</h3>
+        <p>Building structured, semantic and SEO-friendly web pages.</p>
+      </div>
+
+      <div class="skill-card">
+        <i class="fab fa-css3-alt skill-icon css"></i>
+        <h3>CSS3</h3>
+        <p>Designing responsive and modern user interfaces.</p>
+      </div>
+
+      <div class="skill-card">
+        <i class="fab fa-js-square skill-icon js"></i>
+        <h3>JavaScript</h3>
+        <p>Creating dynamic and interactive web functionality.</p>
+      </div>
+
+      <div class="skill-card">
+        <i class="fab fa-react skill-icon react"></i>
+        <h3>React</h3>
+        <p>Developing scalable component-based frontend applications.</p>
+      </div>
+
+      <div class="skill-card">
+        <i class="fab fa-node-js skill-icon node"></i>
+        <h3>Node.js</h3>
+        <p>Building backend APIs and server-side systems.</p>
+      </div>
+
+      <div class="skill-card">
+        <i class="fab fa-python skill-icon python"></i>
+        <h3>Python</h3>
+        <p>Automation scripting and backend development.</p>
+      </div>
+
+      <div class="skill-card">
+        <i class="fab fa-java skill-icon java"></i>
+        <h3>Java</h3>
+        <p>Developing object-oriented and system-based applications.</p>
+      </div>
+
     </div>
   </div>
 </section>
@@ -196,20 +137,30 @@
   <div class="container">
     <h2>Contact Me</h2>
     <p>Email: <a href="mailto:scurd142@gmail.com">scurd142@gmail.com</a></p>
-    <p>Phone: 0791973182</p>
+    <p>Phone: +254 791 973 182</p>
+
     <div class="contact-links">
-      <a href="https://facebook.com/scurd.sammy" target="_blank" class="facebook"><i class="fab fa-facebook-f"></i> Facebook</a>
-      <a href="https://instagram.com/scurd.sammy" target="_blank" class="instagram"><i class="fab fa-instagram"></i> Instagram</a>
-      <a href="https://twitter.com/scurd.sammy" target="_blank" class="twitter"><i class="fab fa-twitter"></i> Twitter</a>
-      <a href="tel:+254791973182" class="call"><i class="fas fa-phone"></i> Call Me</a>
-      <a href="https://wa.me/254791973182" target="_blank" class="whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp Me</a>
+      <a href="https://facebook.com/scurd.sammy" target="_blank" class="facebook">
+        <i class="fab fa-facebook-f"></i> Facebook
+      </a>
+      <a href="https://instagram.com/scurd.sammy" target="_blank" class="instagram">
+        <i class="fab fa-instagram"></i> Instagram
+      </a>
+      <a href="https://twitter.com/scurd.sammy" target="_blank" class="twitter">
+        <i class="fab fa-twitter"></i> Twitter
+      </a>
+      <a href="tel:+254791973182" class="call">
+        <i class="fas fa-phone"></i> Call Me
+      </a>
+      <a href="https://wa.me/254791973182" target="_blank" class="whatsapp">
+        <i class="fab fa-whatsapp"></i> WhatsApp Me
+      </a>
     </div>
   </div>
 </section>
 
-<!-- Footer -->
 <footer>
-  <p>© 2026 Samuel Kabesa Nyabuto. All Rights Reserved.</p>
+  <p>© 2026 Samuel Kabesa Nyabuto | Software Engineer</p>
 </footer>
 
 </body>
