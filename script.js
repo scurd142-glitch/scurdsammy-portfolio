@@ -96,10 +96,10 @@ document.addEventListener("DOMContentLoaded", function () {
       modal.style.zIndex = "10000";
       modal.innerHTML = `
         <div style="background:white;padding:25px;border-radius:15px;max-width:600px;text-align:center;position:relative;opacity:0;transform:scale(0.8);transition:0.3s;">
-          <h2>FinBridge Project</h2>
+          <h2>WritersNite Project</h2>
           <p>Explore detailed features, screenshots, and links to premium services.</p>
-          <img src="images/finbridgelogo.jpg" style="width:120px;margin:20px 0;" alt="FinBridge Logo">
-          <a href="https://tinyurl.com/SCURDTECHS" target="_blank" style="display:inline-block;margin-top:15px;padding:10px 20px;background:#28a745;color:white;border-radius:8px;text-decoration:none;">Visit Live Project</a>
+          <img src="images/writersnitelogo.jpg" style="width:120px;margin:20px 0;" alt="WritersNite Logo">
+          <a href="https://tinyurl.com/yhjkzsp6" target="_blank" style="display:inline-block;margin-top:15px;padding:10px 20px;background:#28a745;color:white;border-radius:8px;text-decoration:none;">Visit Live Project</a>
           <button id="closeModal" style="position:absolute;top:10px;right:10px;background:red;color:white;border:none;padding:5px 10px;border-radius:5px;cursor:pointer;">X</button>
         </div>
       `;
